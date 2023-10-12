@@ -13,8 +13,10 @@
     <body>
         <!-- HEADER -->
         <header class="header">
+            <!-- LOGO -->
             <img src="public/img/logo.png" alt="Trillo logo" class="logo">
 
+            <!-- SEARCH FIELD -->
             <form action="#" class="search">
                 <input type="text" class="search__input" placeholder="Search hotels">
                 <button class="search__button">
@@ -24,6 +26,7 @@
                 </button>
             </form>
 
+            <!-- USER NAVIGATION -->
             <nav class="user-nav">
                 <div class="user-nav__icon-box">
                     <svg class="user-nav__icon">
@@ -48,9 +51,52 @@
 
         <!-- CONTENT -->
         <div class="content">
+            <!-- SIDEBAR NAV -->
             <nav class="sidebar">
-                Nav
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="public/img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="public/img/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="public/img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Car Rental</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="public/img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    &copy; 2017 by Trillo. All rights reserved.
+                </div>
             </nav>
+
+            <!-- MAIN VIEW -->
             <main class="hotel-view">
                 Hotel view
             </main>
