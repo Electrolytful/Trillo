@@ -34,6 +34,10 @@ body {
   display: flex;
   flex-direction: column; }
 
+::selection {
+  background-color: var(--color-primary-light);
+  color: #fff; }
+
 .header {
   font-size: 1.4rem;
   height: 7rem;
@@ -42,6 +46,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 28.125em) {
+    .header {
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 12rem; } }
 
 .content {
   flex: 1;
@@ -104,6 +113,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 28.125em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%;
+      background-color: var(--color-grey-light-2); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -116,10 +130,18 @@ body {
     outline: 2px solid transparent;
     width: 90%;
     transition: all .2s; }
+    @media only screen and (max-width: 28.125em) {
+      .search__input {
+        border-radius: 0;
+        outline: none; } }
     .search__input:focus {
       outline: 2px solid var(--color-primary-light);
       width: 100%;
       background-color: var(--color-grey-light-3); }
+      @media only screen and (max-width: 28.125em) {
+        .search__input:focus {
+          outline: none;
+          width: 90%; } }
     .search__input::placeholder {
       font-weight: 100;
       color: var(--color-grey-light-4); }
@@ -248,6 +270,9 @@ body {
   display: flex;
   align-items: center;
   border-bottom: var(--line); }
+  @media only screen and (max-width: 28.125em) {
+    .overview {
+      flex-wrap: wrap; } }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
@@ -258,9 +283,19 @@ body {
       .overview__heading {
         font-size: 1.8rem;
         padding: 1.3rem 2rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .overview__heading {
+        flex: 1; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
+    @media only screen and (max-width: 28.125em) {
+      .overview__stars {
+        order: 1;
+        flex: 0 0 100%;
+        padding: .5rem;
+        margin-left: 5rem;
+        margin-top: -1rem; } }
   .overview__star, .overview__location-icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -395,6 +430,9 @@ body {
   @media only screen and (max-width: 56.5625em) {
     .cta {
       padding: 2.5rem 0; } }
+  @media only screen and (max-width: 31.875em) {
+    .cta {
+      padding: 3rem; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
