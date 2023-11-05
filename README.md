@@ -30,9 +30,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+A project made for mastering CSS flexbox. Trillo is an all in one booking platform where the user can search for different flights, hotels and car rental services in several different countries.
 
-
-<b>Link to live demo: (project still under development)</b>
+<b>Link to live demo: https://trillo-erhandev.vercel.app</b>
 
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
@@ -53,7 +53,9 @@
 
 <!-- Screenshots -->
 ## Screenshots
-
+<img src="screenshots/trillo.png" alt="Trillo desktop screenshot" width="1200px" />
+<img src="screenshots/trillo-mobile.jpg" alt="Trillo mobile screenshot" width="600px" />
+<img src="screenshots/trillo-mobile-2.jpg" alt="Trillo mobile screenshot 2" width="600px" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
